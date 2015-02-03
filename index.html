@@ -5,6 +5,7 @@
     <title>Is Laravel 5 Out?</title>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
     <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -56,8 +57,10 @@
                     status.html('Not Yet Released. :(');
                 }
                 loading.hide();
-                latestWrap.fadeIn(500);
-                status.fadeIn(500);
+                // latestWrap.fadeIn(500);
+                // status.fadeIn(500);
+                latestWrap.show().addClass('animated tada');
+                status.show().addClass('animated tada');
             });
         }
 
